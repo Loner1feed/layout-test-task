@@ -1,0 +1,248 @@
+@import './variables.scss';
+
+// common styles
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'montserrat';
+}
+
+.wrap {
+    max-width: 1200px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin: 0px auto;
+}
+
+.button {
+    font-family: 'montserrat';
+    display: grid;
+    place-items: center;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 100%;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    max-width: 270px;
+    width: 100%;
+    padding: 22px;
+    background: $green;
+    text-decoration: none;
+    white-space: nowrap;
+    border-radius: 5px;
+    border: 2px solid transparent;
+    transition: 0.3s;
+    font-size: 15px;
+    &:hover {
+        border-color: $blue;
+    }
+    &:active {
+        background: $blue;
+    }
+
+    &--header {
+        padding: 10px;
+        width: 170px;
+        &:hover {
+            border-color: #fff;
+        }
+
+        &:active {
+            background: #fff;
+            color: $blue;
+        }
+    }
+}
+
+h1 {
+    font-family: 'montserrat';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 50px;
+    line-height: 125%;
+}
+
+h2 {
+    font-family: 'montserrat';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 32px;
+    line-height: 125%;
+}
+
+h3 {
+    font-family: 'montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 21px;
+    line-height: 125%;
+}
+
+p {
+    font-family: 'montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 175%;
+}
+
+.nowrap {
+    white-space: nowrap;
+}
+
+
+// header
+.header {
+    background: $blue;
+
+    &__toggler {
+        display: none;
+    }
+
+    &__logo {
+        max-width: 242px;
+        min-width: 135px;
+        margin-right: 30px;
+        img     {
+            width: 100%;
+            margin-bottom: -3px;
+        }
+    }
+
+    &__wrap {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-top: 18px;
+        padding-bottom: 18px;
+    }
+
+    &__nav {
+        display: flex;
+        align-items: center;
+
+    }
+
+    &__link {
+        margin-right: 35px;
+        text-decoration: none;
+        white-space: nowrap;
+        color: #fff;
+        font-weight: 600;
+    }
+}
+
+
+// main banner
+.mainBanner {
+
+    background: url(../../img/mainBanner-bg.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    &__wrap {
+        padding-top: 170px;
+        padding-bottom: 180px;
+    }
+
+    &__info {
+        max-width: 550px;
+    }
+
+    &__title {
+        margin-bottom: 20px;
+        color: #484848;
+    }
+
+    &__subtitle {
+        font-size: 16px;
+        line-height: 140%;
+        color: #000;
+        margin-bottom: 58px;
+        max-width: 435px;
+    }
+}
+
+
+// services
+.services{
+    background: $light-blue;
+    &__wrap {
+        padding-top: 120px;
+        padding-bottom: 120px;
+    }
+
+    &__title {
+        margin-bottom: 75px;
+        text-align: center;
+    }
+    
+    &__dropInfo {
+        &:not(:last-child) {
+            margin-bottom: 10px;
+        }
+    }
+}
+
+.dropInfo {
+    background: #fff;
+    border-radius: 15px;
+    
+
+    &__circle {
+        display: block;
+        width: 24px;
+        height: 24px;
+        border-radius: 50%;
+        background: $green;
+        margin-right: 28px;
+        transition: 0.3s;
+    }
+
+    &__heading {
+        padding: 18px 40px;
+        display: flex;
+        align-items: center;
+        width: 100%;  
+        cursor: pointer;
+        p {
+            margin-right: auto;
+        }
+
+        span {
+            font-size: 30px;
+        }
+
+        &--open {
+            .dropInfo__circle {
+                background: $blue;
+            }
+
+            p {
+                font-weight: 800;
+            }
+
+            span {
+                transform: rotate(180deg);
+            }
+        }
+    }
+
+    &__body {
+        display: none;
+        padding: 20px 40px;
+        padding-top: 10px;
+        padding-left: 52px;
+        p {
+            padding-top: 7px;
+            padding-bottom: 7px;
+            padding-left: 40px;
+            padding-right: 30px;
+            border-left: 1px solid #000000;
+        }
+    }
+}
