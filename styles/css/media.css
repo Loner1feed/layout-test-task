@@ -3,6 +3,15 @@
     background-size: 100%;
   }
 }
+@media screen and (max-width: 1100px) {
+  .moreInfo__wrap {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+  .moreInfo__img {
+    margin-right: -100px;
+  }
+}
 @media screen and (max-width: 950px) {
   .header__link {
     margin-right: 15px;
@@ -22,16 +31,55 @@
     padding-top: 585px;
     padding-bottom: 50px;
   }
+
+  .portfolio__item {
+    height: 300px;
+  }
+
+  .moreInfo__img {
+    display: none;
+  }
+  .moreInfo__wrap {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .moreInfo__title {
+    text-align: center;
+    margin-bottom: 0;
+  }
+  .moreInfo__text {
+    margin-right: 0;
+  }
+  .moreInfo__mobileImg {
+    display: block;
+    margin: 30px 0;
+  }
+  .moreInfo__mobileImg img {
+    width: 100%;
+  }
+
+  .footer__logo {
+    margin-top: 0;
+  }
+  .footer__bottom {
+    padding-top: 60px;
+  }
+
+  .phoneBlock__row {
+    font-size: 16px;
+  }
 }
 @media screen and (max-width: 720px) {
+  .logo {
+    max-width: 135px;
+  }
+
   .header {
     position: relative;
   }
   .header__button {
     display: none;
-  }
-  .header__logo {
-    max-width: 135px;
   }
   .header__toggler {
     display: -webkit-box;
@@ -92,6 +140,74 @@
   .mainBanner__wrap {
     padding-top: 505px;
   }
+
+  .steps__wrap {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  .steps__title {
+    margin-bottom: 40px;
+  }
+  .steps__arrows {
+    padding-top: 40px;
+  }
+  .steps .slick-list {
+    overflow: hidden;
+  }
+  .steps__item {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-top: 30px;
+    padding-bottom: 50px;
+    margin: 0px 100px;
+  }
+  .steps__text {
+    margin-right: 0;
+  }
+
+  .formBlock__wrap {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  .formBlock__img {
+    margin-top: 45px;
+    display: block;
+  }
+  .formBlock__img img {
+    width: 100%;
+  }
+
+  .phoneBlock {
+    display: none;
+  }
+
+  .footer__top {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .footer__phoneBlock--mobile {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .footer__logo {
+    max-width: 280px;
+  }
+  .footer__socials {
+    padding-top: 35px;
+    padding-bottom: 40px;
+  }
+  .footer__top {
+    max-width: 280px;
+    margin: 0px auto;
+  }
+  .footer__logo {
+    margin-bottom: 25px;
+  }
 }
 @media screen and (max-width: 600px) {
   .wrap {
@@ -138,6 +254,38 @@
     padding: 0;
     padding-left: 25px;
   }
+
+  .steps__item {
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+
+  .portfolio__grid {
+    -ms-grid-columns: (1fr)[1];
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .portfolio__arrows {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding-top: 50px;
+  }
+
+  .formBlock__title {
+    margin-bottom: 17px;
+  }
+  .formBlock__subtitle {
+    margin-bottom: 25px;
+  }
+  .formBlock__input:not(:first-child) {
+    margin-top: 10px;
+  }
+  .formBlock__button {
+    margin-top: 15px;
+  }
 }
 @media screen and (max-width: 450px) {
   h1 {
@@ -178,5 +326,81 @@
   }
   .services__title {
     margin-bottom: 17px;
+  }
+
+  .steps__wrap {
+    padding-top: 40px;
+    padding-bottom: 45px;
+  }
+  .steps__arrows {
+    padding-top: 25px;
+    max-width: 230px;
+    margin: 0px auto;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .steps__title {
+    margin-bottom: 20px;
+  }
+  .steps__item h3 {
+    margin-bottom: 0;
+  }
+  .steps__paragraph {
+    font-size: 17px;
+    line-height: 175%;
+  }
+
+  .arrow {
+    margin: 0;
+  }
+
+  .portfolio__item {
+    height: 260px;
+    margin-bottom: 15px;
+  }
+  .portfolio .slick-slide {
+    margin-right: 15px;
+    margin-left: 15px;
+  }
+  .portfolio__grid {
+    display: block;
+    margin: 0px -15px;
+  }
+  .portfolio__arrows {
+    padding-top: 10px;
+    max-width: 230px;
+    margin: 0px auto;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .portfolio__wrap {
+    padding-top: 16px;
+    padding-bottom: 30px;
+  }
+  .portfolio__title {
+    margin-bottom: 20px;
+  }
+
+  .moreInfo__wrap {
+    padding-top: 45px;
+    padding-bottom: 50px;
+  }
+  .moreInfo__button {
+    width: 100%;
+    max-width: 100%;
+    margin-top: 30px;
+  }
+  .moreInfo__paragraph br {
+    display: block;
+  }
+
+  .footer__wrap {
+    padding-top: 45px;
+    padding-bottom: 140px;
+  }
+  .footer__bottom {
+    padding-top: 25px;
   }
 }
